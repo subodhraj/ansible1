@@ -1,0 +1,9 @@
+---
+# tasks file for http
+- name: install apache
+  command: apt-get install apache2 -y
+
+- name: Copy file with owner and permissions
+  copy:
+    src: ../templates/*
+    dest: /var/www/html/.

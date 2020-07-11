@@ -1,0 +1,15 @@
+---
+- name: swapoff
+  command: swapoff -a
+
+- name: allocate 3g swapfile
+  command: fallocate -l 3G /swapfile
+
+- name: make swap file
+  command: mkswap /swapfile
+
+- name: swap on
+  command: swapon -a
+
+- name: add vim config
+  include: vim_editor.yml 

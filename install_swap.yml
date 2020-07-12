@@ -1,5 +1,5 @@
 ---
-- hosts: "{target}"
+- hosts: "{{target}}"
   become: yes
   roles:
   - swapcreation

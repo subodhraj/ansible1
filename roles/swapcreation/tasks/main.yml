@@ -11,5 +11,12 @@
 - name: swap on
   command: swapon /swapfile
 
+- name: add the swapfile in fstab to make it permanent after reboot
+  lineinfile:
+    path: /etc/fstab
+    backup: yes
+    state: present
+    line: '/swapfile swap swap defaults 0 0'
+
 - name: add vim config
   include: vim_editor.yml 

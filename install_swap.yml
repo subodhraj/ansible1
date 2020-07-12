@@ -1,4 +1,6 @@
 ---
+#ansible-playbook -i hosts clearcache.yml -e "target=subodh-desktop" -u root --tags "reboot"
+
 - hosts: "{{target}}"
   become: yes
   roles:

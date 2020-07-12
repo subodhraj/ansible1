@@ -1,0 +1,29 @@
+---
+# tasks file for cache
+- name: make directory
+  file: 
+    path: ~/scripts
+    mode: '0744'
+    state: directory
+
+- name: copy clear cache
+  copy: 
+    src: ../files/clearcache.sh
+    dest: ~/scripts/clearcache.sh
+    mode: '0744'
+
+- name: setup cron to run every day 
+  cron:
+    name: "execute the job"
+    job: "~/scripts/clearcache.sh"
+    minute: "10" 
+
+- name: reboot every mid night
+  cron:
+    name: "reboot every mid night"
+    minute: "0"
+    hour: "0"
+    job: "/sbin/shutdown -r now"
+  tags:
+  - reboot        
+

@@ -1,6 +1,6 @@
 ---
 - name: copy template
   template: src={{ item.src }} dest= {{ item.dest }} force=yes
-  with items:
+  with_items:
     - { src: '.vimrc', dest: '~/.vimrc'}
   

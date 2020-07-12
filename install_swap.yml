@@ -1,4 +1,5 @@
 ---
 - hosts: "{target}"
+  become: yes
   roles:
   - swapcreation

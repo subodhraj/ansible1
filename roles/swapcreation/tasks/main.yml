@@ -9,7 +9,7 @@
   command: mkswap /swapfile
 
 - name: swap on
-  command: swapon -a
+  command: swapon /swapfile
 
 - name: add vim config
   include: vim_editor.yml 

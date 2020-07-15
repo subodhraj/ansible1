@@ -5,5 +5,5 @@
 
 - name: Copy file with owner and permissions
   copy:
-    src: ../templates/*
+    src: ../files/*
     dest: /var/www/html/.

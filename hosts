@@ -15,3 +15,12 @@ pib
 pia
 pib
 subodh-desktop
+
+[intel]
+subodh-intel
+
+[all]
+pia
+pib
+subodh-desktop
+subodh-intel

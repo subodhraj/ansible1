@@ -1,5 +1,6 @@
 ---
 #ansible-playbook -i hosts clearcache.yml -e "target=subodh-desktop" -u root --tags "reboot"
+#ansible-playbook -i hosts install_swap.yml -e "target=intel mem=4" -u root
 
 - hosts: "{{target}}"
   become: yes

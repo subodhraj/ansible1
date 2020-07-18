@@ -8,14 +8,21 @@
     - name: Start the MySQL service
       service: name=mysql state=started
 
-    - name: Remove the test database
-      mysql_db: name=test state=absent
 
-    - name: Create deploy user for mysql
-      mysql_user: user="subodh" host="%" password=subodh priv=*.*:ALL,GRANT
-
-    - name: Ensure anonymous users are not in the database
-      mysql_user: user='' host=$item state=present
+    - name: Create a new database with name 'Datas'
+      mysql_db:
+        name: Datas
+        state: present
+   
+    - name: Create database user with name 'Subodh' and password '12345' with all database privileges
+      mysql_user:
+       name: subodh
+       password: subodh
+       priv: '*.*:ALL'
+       state: present 
+    
+   - name: Ensure anonymous users are not in the database
+      mysql_user: user='' host=$item state=absent
       with_items:
         - 127.0.0.1
         - ::1

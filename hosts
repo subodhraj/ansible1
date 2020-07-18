@@ -1,20 +1,13 @@
-[pi3]
-subodh-desktop
-
-[pia]
-pia
-
-[pib]
-pib
-
 [pizero]
 pia
 pib
+pic
 
 [piall]
 pia
 pib
 subodh-desktop
+pic
 
 [intel]
 subodh-intel
@@ -24,3 +17,4 @@ pia
 pib
 subodh-desktop
 subodh-intel
+pic

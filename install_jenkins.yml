@@ -1,0 +1,20 @@
+- hosts: {{target}}
+  sudo: true
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - name: download and install gpg keys for jenkins
+      command: wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+    
+    - name: add the swapfile in fstab to make it permanent after reboot
+      lineinfile:
+        path: /etc/apt/sources.list
+        backup: yes
+        state: present
+        line: 'deb https://pkg.jenkins.io/debian binary/'
+    
+    - name: update the repo and install jenkins 
+      command: apt-get update && apt install jenkins
+    
+

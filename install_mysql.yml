@@ -21,7 +21,7 @@
        priv: '*.*:ALL'
        state: present 
     
-   - name: Ensure anonymous users are not in the database
+    - name: Ensure anonymous users are not in the database
       mysql_user: user='' host=$item state=absent
       with_items:
         - 127.0.0.1

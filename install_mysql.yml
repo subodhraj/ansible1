@@ -4,7 +4,7 @@
       apt: name=mysql_server state=present
 
     - name: Start the MySQL service
-      systemd: name=mysqld state=started enabled=yes
+      systemd: name=mysql state=started enabled=yes
 
 
     - name: Create a new database with name 'Datas'

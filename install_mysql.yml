@@ -11,28 +11,28 @@
       systemd: name=mysql state=started enabled=yes
 
 
-    - name: Create a new database with name 'Datas'
-      mysql_db:
-        name: Datas
-        state: present
+      #    - name: Create a new database with name 'Datas'
+      #mysql_db:
+      #  name: Datas
+      # state: present
    
-    - name: Create database user with name 'Subodh' and password '12345' with all database privileges
-      mysql_user:
-       name: subodh
-       password: subodh
-       priv: '*.*:ALL'
-       state: present 
+      #   - name: Create database user with name 'Subodh' and password '12345' with all database privileges
+      # mysql_user:
+      # name: subodh
+      # password: subodh
+      # priv: '*.*:ALL'
+      # state: present 
     
-    - name: Ensure anonymous users are not in the database
-      mysql_user: user='' host=$item state=absent
-      with_items:
-        - 127.0.0.1
-        - ::1
-        - localhost
+       # - #name: Ensure anonymous users are not in the database
+      #mysql_user: user='' host=$item state=absent
+      #with_items:
+        #     - 127.0.0.1
+        # - ::1
+        # - localhost
 
-    - name: Update mysql root password for all root accounts
-      mysql_user: name=root host={{item}} password=subodh
-      with_items:
-        - 127.0.0.1
-        - ::1
-        - localhost
+          # - name: Update mysql root password for all root accounts
+          # mysql_user: name=root host={{item}} password=subodh
+      # with_items:
+        #- 127.0.0.1
+        #- ::1
+          ##- localhost

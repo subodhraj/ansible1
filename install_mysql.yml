@@ -4,7 +4,7 @@
       command: apt update
 
     - name: Install MySQL
-      apt: name=mariadb_server state=present
+      command: apt install mariadb-server -y
 
 
     - name: Start the MySQL service

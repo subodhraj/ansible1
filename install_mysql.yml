@@ -1,5 +1,8 @@
 - hosts: "{{target}}"
   tasks:
+    - name: apt udpate
+      command: apt update
+
     - name: Install MySQL
       apt: name=mysql_server state=present
 

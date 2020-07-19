@@ -1,9 +1,7 @@
 - hosts: "{{target}}"
   tasks:
     - name: Install MySQL
-      apt: name= "{{ item }}" state=present
-      with_items:
-        - mysql_server
+      apt: name=mysql_server state=present
 
     - name: Start the MySQL service
       systemd: name=mysqld state=started enabled=yes

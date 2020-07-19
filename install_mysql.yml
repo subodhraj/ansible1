@@ -6,7 +6,7 @@
         - mysql_server
 
     - name: Start the MySQL service
-      service: name=mysql state=started
+      systemd: name=mysql state=started enabled=yes
 
 
     - name: Create a new database with name 'Datas'

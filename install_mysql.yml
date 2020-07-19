@@ -4,7 +4,8 @@
       command: apt update
 
     - name: Install MySQL
-      apt: name=mysql_server state=present
+      apt: name=mariadb_server state=present
+
 
     - name: Start the MySQL service
       systemd: name=mysql state=started enabled=yes

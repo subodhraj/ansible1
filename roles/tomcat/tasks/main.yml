@@ -1,0 +1,7 @@
+---
+# tasks file for tomcat
+- name: install java
+  command: apt install openjdk-8-jre
+ 
+- name: install tomcat
+  command: apt install tomcat8

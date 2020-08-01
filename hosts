@@ -8,6 +8,7 @@ pia
 pib
 subodh-desktop
 pic
+pi4
 
 [intel]
 subodh-intel
@@ -18,3 +19,8 @@ pib
 subodh-desktop
 subodh-intel
 pic
+pi4
+
+[pi4b]
+pi4
+

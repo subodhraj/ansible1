@@ -26,3 +26,11 @@ pi4
 
 [pi3b]
 pi3
+
+[pi4b]
+pi4b
+
+[kubernetes]
+pi4
+pi4b
+pi3

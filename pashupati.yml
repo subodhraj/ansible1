@@ -2,5 +2,10 @@
 
 host: {{ target }}
 
+tasks:
+
+- name: k cha chutya
+  command: echo "this is ansible" 
+
 
 

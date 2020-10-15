@@ -21,4 +21,4 @@ print(sorter_users)
 #loop
 
 for u in users:
-    
+    print("username is ",u)

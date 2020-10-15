@@ -39,3 +39,18 @@ print(users)
 
 ram = input("enter a number: ")
 print(ram)
+
+num = input("enter a num: ")
+print(num)
+print("type", type(num))
+
+num1 = input("enter another num: ")
+print(num1)
+print("type", type(num1))
+
+message = "ram is chutya"
+
+message = [s + " " for s in message]
+print(message)
+
+print(' '.join(message))

@@ -22,3 +22,20 @@ print(sorter_users)
 
 for u in users:
     print("username is ",u)
+    print("username is ",u.title())
+
+for i in range(1,10):
+    print(i)
+
+for i in users[1:3]:
+    print(i)
+
+num = "123"
+
+for i in range(0,len(users)):
+    users[i] = users[i] + num
+    
+print(users)
+
+ram = input("enter a number: ")
+print(ram)

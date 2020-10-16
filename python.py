@@ -54,3 +54,8 @@ message = [s + " " for s in message]
 print(message)
 
 print(' '.join(message))
+
+if 1<2:
+     print("yes this is correct")
+else:
+     print( "worng message" )

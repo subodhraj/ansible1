@@ -59,3 +59,16 @@ if 1<2:
      print("yes this is correct")
 else:
      print( "worng message" )
+
+
+
+
+usersa = ["ram", "shaym", "hari", "kukuar"]
+
+k = input("enter a name ma ki ch: ")
+
+usersa.append(k)
+if k in usersa:
+    print(k + " is present")
+else:
+    print(k + " is dead")    

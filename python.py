@@ -72,3 +72,24 @@ if k in usersa:
     print(k + " is present")
 else:
     print(k + " is dead")    
+
+    #dictionary
+
+subodh = {
+    "height": "5.6",
+    "weight": "200",
+    "age": "31",
+    "job": "devops"
+}
+
+print("height of subodh is: " + subodh["height"])
+
+manche = [
+    {"name":"subodh1","job":"system","age":"31"},
+    {"name":"pashu","job":"qa","age":"34"},
+    {"name":"kari","job":"ba","age":"26"}
+]
+
+for i in manche:
+    print("username is",i["name"],"and job is",i["job"],"age is",i["age"])
+    

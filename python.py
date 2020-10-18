@@ -97,7 +97,7 @@ for u in range(0,len(manche)):
     manche[u]['password'] = '123456'
 print(manche)
 
-def sayHello:
+def sayHello():
     print("hello")
 
 sayHello()    

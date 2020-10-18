@@ -92,4 +92,13 @@ manche = [
 
 for i in manche:
     print("username is",i["name"],"and job is",i["job"],"age is",i["age"])
+
+for u in range(0,len(manche)):
+    manche[u]['password'] = '123456'
+print(manche)
+
+def sayHello:
+    print("hello")
+
+sayHello()    
     
